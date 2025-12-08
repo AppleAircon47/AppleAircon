@@ -198,7 +198,7 @@ export default function WhyChooseUs() {
                             className="bg-white rounded-2xl p-8 shadow-xl transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl"
                         >
                             {/* Icon with Gradient Background */}
-                            <div className={`inline-flex p-4 rounded-xl bg-gradient-to-br ${feature.color} mb-6 text-white`}>
+                            <div className={`inline-flex p-4 rounded-xl bg-linear-to-br ${feature.color} mb-6 text-white`}>
                                 {feature.icon}
                             </div>
 
@@ -214,7 +214,7 @@ export default function WhyChooseUs() {
                 </div>
 
                 {/* Additional Benefits */}
-                <div className="mt-16 bg-gradient-to-br from-[#1e40af] to-[#3b82f6] rounded-3xl p-8 md:p-12 text-white">
+                <div className="mt-16 bg-linear-to-br from-[#1e40af] to-[#3b82f6] rounded-3xl p-8 md:p-12 text-white">
                     <div className="grid md:grid-cols-2 gap-8 items-center">
                         <div>
                             <h3 className="text-2xl md:text-3xl font-bold mb-6">
