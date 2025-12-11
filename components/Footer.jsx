@@ -63,10 +63,10 @@ export default function Footer() {
                         <div>
                             <h3 className="text-lg font-semibold mb-4">Our Services</h3>
                             <ul className="space-y-3 text-gray-300 text-sm">
-                                <li><Link href="/services?service=ac" className="hover:text-white">AC Repair & Installation</Link></li>
-                                <li><Link href="/services?service=refrigerator" className="hover:text-white">Refrigerator Repair</Link></li>
-                                <li><Link href="/services?service=washing" className="hover:text-white">Washing Machine Repair</Link></li>
-                                <li><Link href="/services?service=microwave" className="hover:text-white">Microwave Oven Repair</Link></li>
+                                <li><Link href="/services?service=ac" className="hover:text-white transition-colors">AC Repair & Installation</Link></li>
+                                <li><Link href="/services?service=washing" className="hover:text-white transition-colors">Washing Machine Repair</Link></li>
+                                <li><Link href="/services?service=refrigerator" className="hover:text-white transition-colors">Refrigerator Repair</Link></li>
+                                <li><Link href="/services?service=microwave" className="hover:text-white transition-colors">Microwave Oven Repair</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -77,9 +77,9 @@ export default function Footer() {
                     <h3 className="text-lg font-semibold mb-4">Our Services</h3>
                     <ul className="space-y-3 text-gray-300">
                         <li><Link href="/services?service=ac" className="hover:text-white transition-colors">AC Repair & Installation</Link></li>
-                        <li><Link href="/services/fridge-repair" className="hover:text-white transition-colors">Refrigerator Repair</Link></li>
-                        <li><Link href="/services/washing-machine" className="hover:text-white transition-colors">Washing Machine Repair</Link></li>
-                        <li><Link href="/services/microwave-repair" className="hover:text-white transition-colors">Microwave Oven Repair</Link></li>
+                        <li><Link href="/services?service=washing" className="hover:text-white transition-colors">Washing Machine Repair</Link></li>
+                        <li><Link href="/services?service=refrigerator" className="hover:text-white transition-colors">Refrigerator Repair</Link></li>
+                        <li><Link href="/services?service=microwave" className="hover:text-white transition-colors">Microwave Oven Repair</Link></li>
                     </ul>
                 </div>
 
