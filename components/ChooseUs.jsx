@@ -6,7 +6,7 @@ import {
     Zap,
     Smile,
     Receipt,
-    PackageCheck,
+    Wrench,
     Layers,
     CheckCircle
 } from "lucide-react";
@@ -18,8 +18,8 @@ export default function WhyChooseUs() {
     const features = [
         {
             icon: <BadgeCheck className="h-8 w-8" />,
-            title: "Certified & Trained Technicians",
-            description: "Our technicians are factory-trained and certified for all major AC and appliance brands, ensuring expert service every time.",
+            title: "Experienced & Skilled Technicians",
+            description: "Our technicians bring years of hands-on experience in AC and appliance servicing across leading brands.",
             color: "from-blue-500 to-cyan-500"
         },
         {
@@ -29,9 +29,9 @@ export default function WhyChooseUs() {
             color: "from-green-500 to-emerald-500"
         },
         {
-            icon: <PackageCheck className="h-8 w-8" />,
-            title: "Genuine Spare Parts",
-            description: "We use only genuine and high-quality spare parts with warranty for all repairs and replacements.",
+            icon: <Wrench className="h-8 w-8" />,
+            title: "Technical Expertise",
+            description: "Strong technical knowledge to accurately diagnose issues and deliver reliable, long-lasting solutions.",
             color: "from-orange-500 to-amber-500"
         },
         {
@@ -49,9 +49,10 @@ export default function WhyChooseUs() {
         {
             icon: <Layers className="h-8 w-8" />,
             title: "Comprehensive Services",
-            description: "From AC repair to appliance servicing, PCB repair, and sales – we handle all your needs under one roof.",
+            description: "From AC servicing to appliance care, PCB repair, and sales – all essential services under one roof.",
             color: "from-indigo-500 to-blue-500"
         }
+
     ];
 
     const stats = [
@@ -142,7 +143,7 @@ export default function WhyChooseUs() {
                         animate={isInView ? { opacity: 1, y: 0 } : {}}
                         transition={{ duration: 0.6, delay: 0.1 }}
                     >
-                        Why Choose Apple Aircon?
+                        Why Choose Digital Aircon?
                     </motion.h2>
                     <motion.p
                         className="text-lg text-gray-600 max-w-3xl mx-auto"

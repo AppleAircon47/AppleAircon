@@ -4,8 +4,11 @@ import Link from "next/link"; // if using Next.js
 import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+// import Floating from "../../components/Floating";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+
 import {
-    CheckCircle,
     Phone,
     Star,
     Users,
@@ -18,12 +21,12 @@ const serviceDetails = {
         slug: "ac",
         tabTitle: "Air Conditioner",
         title: "AC Sales & Repair in Navi Mumbai",        // UI-friendly
-        seoTitle: "AC Repair & Services in Navi Mumbai | Apple Aircon", // SEO
+        seoTitle: "AC Repair & Services in Navi Mumbai | Digital Aircon", // SEO
         subtitle: "Trusted AC repair, installation & maintenance experts",
         description:
-            "Apple Aircon offers professional AC repair, installation, servicing, gas refilling, and maintenance in Navi Mumbai for homes and commercial spaces.",
+            "Digital Aircon offers professional AC repair, installation, servicing, gas refilling, and maintenance in Navi Mumbai for homes and commercial spaces.",
         longText:
-            "Apple Aircon is a trusted name for AC repair and services in Navi Mumbai, providing complete air conditioning solutions for residential and commercial customers. Our experienced technicians handle AC installation, preventive servicing, gas refilling, PCB repair, and emergency breakdowns with efficiency and care. We service all major AC brands including LG, Blue Star, Daikin, Samsung, Voltas, and Hitachi. In addition to repair services, we also deal in new air conditioners and buy & sell certified second-hand AC units, offering reliable and cost-effective cooling solutions across Navi Mumbai.",
+            "Digital Aircon is a trusted name for AC repair and services in Navi Mumbai, providing complete air conditioning solutions for residential and commercial customers. Our experienced technicians handle AC installation, preventive servicing, gas refilling, PCB repair, and emergency breakdowns with efficiency and care. We service all major AC brands including LG, Blue Star, Daikin, Samsung, Voltas, and Hitachi. In addition to repair services, we also deal in new air conditioners and buy & sell certified second-hand AC units, offering reliable and cost-effective cooling solutions across Navi Mumbai.",
         heroImage:
             "https://i.pinimg.com/1200x/03/2c/7b/032c7b2a865bb6c1f19892fbb8662179.jpg",
         image:
@@ -60,12 +63,12 @@ const serviceDetails = {
         slug: "washing",
         tabTitle: "Washing Machine",
         title: "Washing Machine Sales & Repair in Navi Mumbai",
-        seoTitle: "Washing Machine Repair in Navi Mumbai | Apple Aircon",
+        seoTitle: "Washing Machine Repair in Navi Mumbai | Digital Aircon",
         subtitle: "Expert repair for automatic & semi-automatic machines",
         description:
-            "Apple Aircon provides reliable washing machine repair and maintenance services in Navi Mumbai for all major brands.",
+            "Digital Aircon provides reliable washing machine repair and maintenance services in Navi Mumbai for all major brands.",
         longText:
-            "Looking for washing machine repair in Navi Mumbai? Apple Aircon offers expert repair services for fully automatic and semi-automatic washing machines. Our technicians fix common issues such as drum problems, motor failure, water leakage, PCB faults, and installation errors. We service leading brands including LG, Samsung, Whirlpool, IFB, Bosch, and Panasonic. With fast doorstep service and genuine spare parts, Apple Aircon ensures long-lasting performance and hassle-free washing machine service across Navi Mumbai.",
+            "Looking for washing machine repair in Navi Mumbai? Digital Aircon offers expert repair services for fully automatic and semi-automatic washing machines. Our technicians fix common issues such as drum problems, motor failure, water leakage, PCB faults, and installation errors. We service leading brands including LG, Samsung, Whirlpool, IFB, Bosch, and Panasonic. With fast doorstep service and genuine spare parts, Digital Aircon ensures long-lasting performance and hassle-free washing machine service across Navi Mumbai.",
         heroImage: "/Washingmachine.png",
         image: "/Washingmachine.png",
         portraitImage: "/WM1.png",
@@ -98,12 +101,12 @@ const serviceDetails = {
         slug: "microwave",
         tabTitle: "Microwave Oven",
         title: "Microwave Oven Sale & Repair in Navi Mumbai",
-        seoTitle: "Microwave Oven Repair in Navi Mumbai | Apple Aircon",
+        seoTitle: "Microwave Oven Repair in Navi Mumbai | Digital Aircon",
         subtitle: "Fast, safe microwave repair with genuine spare parts",
         description:
-            "Apple Aircon offers professional microwave oven repair services in Navi Mumbai for solo, grill, and convection models.",
+            "Digital Aircon offers professional microwave oven repair services in Navi Mumbai for solo, grill, and convection models.",
         longText:
-            "Apple Aircon specializes in microwave oven repair in Navi Mumbai, handling issues such as heating problems, control panel faults, magnetron replacement, and electrical safety checks. Our certified technicians service all major microwave brands including LG, IFB, Samsung, Panasonic, and Whirlpool. We ensure fast, safe, and reliable repair services for homes and commercial kitchens across Navi Mumbai using genuine spare parts.",
+            "Digital Aircon specializes in microwave oven repair in Navi Mumbai, handling issues such as heating problems, control panel faults, magnetron replacement, and electrical safety checks. Our certified technicians service all major microwave brands including LG, IFB, Samsung, Panasonic, and Whirlpool. We ensure fast, safe, and reliable repair services for homes and commercial kitchens across Navi Mumbai using genuine spare parts.",
         heroImage:
             "https://media3.gaggenau.com/Images/1600x/MCIM03335919_Steam-landing-page-teaser-12x5.webp",
         image:
@@ -138,12 +141,12 @@ const serviceDetails = {
         slug: "refrigerator",
         tabTitle: "Refrigerator",
         title: "Refrigerator Sales & Repair in Navi Mumbai",
-        seoTitle: "Refrigerator Repair Services in Navi Mumbai | Apple Aircon",
+        seoTitle: "Refrigerator Repair Services in Navi Mumbai | Digital Aircon",
         subtitle: "Expert solutions for all refrigerator types & brands",
         description:
-            "Apple Aircon provides fast and reliable refrigerator repair services in Navi Mumbai, including cooling issues, compressor repair, and gas charging.",
+            "Digital Aircon provides fast and reliable refrigerator repair services in Navi Mumbai, including cooling issues, compressor repair, and gas charging.",
         longText:
-            "Apple Aircon is a trusted provider of refrigerator repair services in Navi Mumbai, offering expert solutions for cooling problems, compressor faults, gas refilling, and thermostat repair. Our technicians service single-door, double-door, side-by-side, and commercial refrigerators from leading brands such as LG, Samsung, Whirlpool, Haier, Godrej, and Bosch. With quick response times and doorstep service, Apple Aircon ensures efficient and long-lasting refrigerator performance across Navi Mumbai.",
+            "Digital Aircon is a trusted provider of refrigerator repair services in Navi Mumbai, offering expert solutions for cooling problems, compressor faults, gas refilling, and thermostat repair. Our technicians service single-door, double-door, side-by-side, and commercial refrigerators from leading brands such as LG, Samsung, Whirlpool, Haier, Godrej, and Bosch. With quick response times and doorstep service, Digital Aircon ensures efficient and long-lasting refrigerator performance across Navi Mumbai.",
         heroImage:
             "https://media3.gaggenau.com/Images/4000x/27491816_GG-global-Vario-cooling-expressive-series-refrigerators-page-full-width.webp",
         image:
@@ -219,12 +222,14 @@ export default function ServiceDetailPage() {
                         Go Back Home
                     </button>
                 </div>
+                {/* <Floating /> */}
             </div>
         );
     }
 
     return (
         <main className="min-h-screen bg-[#f6f7fb]">
+            <Navbar />
             <h2 className=" pt-28 text-4xl text-center font-extrabold text-[#1e40af]">
                 Service Details
             </h2>
@@ -273,12 +278,12 @@ export default function ServiceDetailPage() {
                                 </div>
                                 <div className="flex items-center gap-2 text-white">
                                     <Users className="h-5 w-5 text-green-400" />
-                                    <span className="font-bold">500+</span>
+                                    <span className="font-bold">2k+</span>
                                     <span className="text-gray-300">Happy Customers</span>
                                 </div>
                                 <div className="flex items-center gap-2 text-white">
                                     <Award className="h-5 w-5 text-blue-400" />
-                                    <span className="font-bold">10+</span>
+                                    <span className="font-bold">12+</span>
                                     <span className="text-gray-300">Years Experience</span>
                                 </div>
                             </div>
@@ -398,6 +403,8 @@ export default function ServiceDetailPage() {
                     </aside>
                 </div>
             </div>
+            <Footer />
+            {/* <Floating /> */}
         </main>
     );
 }

@@ -23,7 +23,7 @@ export default function AppleAirconForm() {
         const whatsappNumber = "918879873774";
 
         const text = `
-Hello Apple Aircon 👋
+Hello Digital Aircon 👋
 
 👤 Name: ${form.name || "N/A"}
 📞 Phone: +91${form.phone}
@@ -56,7 +56,7 @@ Hello Apple Aircon 👋
                     </h2>
 
                     <p className="text-xs md:text-sm text-gray-600 leading-relaxed mb-6">
-                        Apple Aircon provides reliable AC and home appliance sales, repair,
+                        Digital Aircon provides reliable AC and home appliance sales, repair,
                         installation, maintenance, and PCB solutions across Navi Mumbai for
                         both residential and commercial clients.
                     </p>
@@ -83,6 +83,7 @@ Hello Apple Aircon 👋
                             </label>
                             <input
                                 type="text"
+                                suppressHydrationWarning
                                 value={form.name}
                                 onChange={(e) => setForm({ ...form, name: e.target.value })}
                                 placeholder="Enter your name"
@@ -102,6 +103,7 @@ Hello Apple Aircon 👋
                                 </div>
 
                                 <input
+                                    suppressHydrationWarning
                                     type="tel"
                                     maxLength={10}
                                     value={form.phone}
@@ -151,6 +153,7 @@ Hello Apple Aircon 👋
                                 Issue Description
                             </label>
                             <textarea
+
                                 rows="3"
                                 value={form.message}
                                 onChange={(e) => setForm({ ...form, message: e.target.value })}
@@ -161,6 +164,7 @@ Hello Apple Aircon 👋
                         </div>
 
                         <button
+                            suppressHydrationWarning
                             type="submit"
                             className="
                 w-full bg-[#1e40af] text-white rounded-lg py-3

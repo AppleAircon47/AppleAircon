@@ -2,20 +2,10 @@
 
 import React, { useEffect, useState } from "react";
 import { motion, useInView, AnimatePresence } from "framer-motion";
-import {
-  Shield,
-  Users,
-  MapPin,
-  Award,
-  Target,
-  Heart,
-  Clock,
-  CheckCircle,
-  Phone,
-  Star,
-  TrendingUp,
-} from "lucide-react";
+import { Shield, MapPin, Award, Heart, CheckCircle } from "lucide-react";
 import { useRef } from "react";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 export default function AboutUsPage() {
   const containerRef = useRef(null);
@@ -135,7 +125,7 @@ export default function AboutUsPage() {
     {
       title: "Trusted & Transparent Solutions",
       description:
-        "Genuine parts, fair pricing, and guaranteed quality for every repair.",
+        "Skilled technicians, fair pricing, and guaranteed quality for every repair.",
       icon: <Shield className="h-10 w-10" />,
       color: "from-green-500 to-emerald-500",
     },
@@ -148,83 +138,40 @@ export default function AboutUsPage() {
     },
   ];
 
-  // const milestones = [
-  //   {
-  //     year: "2012",
-  //     title: "Foundation",
-  //     description:
-  //       "Apple Aircon started as a small AC service center in Navi Mumbai",
-  //   },
-  //   {
-  //     year: "2015",
-  //     title: "Expansion",
-  //     description: "Added home appliance repair services to our portfolio",
-  //   },
-  //   {
-  //     year: "2018",
-  //     title: "Brand Partnership",
-  //     description: "Became authorized service partner for major AC brands",
-  //   },
-  //   {
-  //     year: "2020",
-  //     title: "Digital Presence",
-  //     description: "Launched online booking system for easy service access",
-  //   },
-  //   {
-  //     year: "2023",
-  //     title: "Market Leader",
-  //     description:
-  //       "Became Navi Mumbai's most trusted AC & appliance service provider",
-  //   },
-  // ];
   const milestones = [
     {
-      year: "2019",
-      title: "Humble Beginning",
+      year: "2012 – 2015",
+      title: "Foundation & Field Experience",
       description:
-        "Started as a small, two-person service team offering basic AC repair and maintenance for homes in our local area.",
+        "Started as a small local service provider, building strong hands-on experience in AC and appliance repair through on-field work and customer referrals.",
     },
     {
-      year: "2020",
-      title: "Built Trust in the Neighborhood",
+      year: "2016 – 2018",
+      title: "Service Expansion",
       description:
-        "Earned customer trust through honest pricing and reliable service. Word-of-mouth recommendations helped us grow steadily.",
+        "Expanded services to cover multiple appliance categories and brands, focusing on reliable diagnostics and practical repair solutions.",
     },
     {
-      year: "2021",
-      title: "Expanded Service Categories",
+      year: "2019 – 2021",
+      title: "Growing Customer Trust",
       description:
-        "Added appliance repair services including refrigerators, washing machines, and microwaves to meet rising customer needs.",
+        "Served a growing residential and commercial customer base with consistent service quality and transparent pricing practices.",
     },
     {
-      year: "2022",
-      title: "Professional Team Formation",
+      year: "2025 – Present",
+      title: "Leading Appliance Service in Navi Mumbai",
       description:
-        "Hired certified technicians and introduced a more structured service process for quicker response and better customer experience.",
-    },
-    {
-      year: "2023",
-      title: "Service Coverage Expansion",
-      description:
-        "Extended our services to nearby areas and began offering same-day AC repair and seasonal maintenance packages.",
-    },
-    {
-      year: "2024",
-      title: "Digital Booking & Customer Support",
-      description:
-        "Launched online booking and WhatsApp support, making it easier for customers to schedule repairs and track service updates.",
-    },
-    {
-      year: "2025",
-      title: "Growing as a Trusted Local Brand",
-      description:
-        "With thousands of successful repairs and loyal repeat customers, we continue to improve our service quality and technician training.",
+        "Trusted by hundreds of households and businesses, we are recognized for fast response, expert technicians, and high-quality, reliable service across Navi Mumbai.",
     },
   ];
 
   return (
     <AnimatePresence>
-      <main className="min-h-screen bg-linear-to-br from-[#eef4ff] via-[#d9e8ff] to-[#bbd4ff] pt-16 overflow-x-hidden">
+      <Navbar key="Navbar" />
+      <main
+        key="AboutUsMain"
+        className="min-h-screen bg-linear-to-br from-[#eef4ff] via-[#d9e8ff] to-[#bbd4ff] pt-16 overflow-x-hidden"
+      >
         {/* Hero Section with enhanced animations */}
         <motion.section
           initial="hidden"
@@ -274,7 +221,7 @@ export default function AboutUsPage() {
                   transition={{ duration: 0.6, delay: 0.4 }}
                   className="text-black"
                 >
-                  Apple Aircon
+                  Digital Aircon
                 </motion.span>
               </motion.h1>
 
@@ -335,9 +282,9 @@ export default function AboutUsPage() {
 
                 <motion.div variants={staggerContainer} className="space-y-4">
                   {[
-                    "Apple Aircon offers complete repair, service, installation, and buying & selling solutions for all types of air conditioners, refrigerators, washing machines, microwave ovens, and deep freezers. We handle both new and old appliances, providing reliable support for residential, commercial, and industrial needs across Navi Mumbai.",
+                    "Digital Aircon offers complete repair, service, installation, and buying & selling solutions for all types of air conditioners, refrigerators, washing machines, microwave ovens, and deep freezers. We handle both new and old appliances, providing reliable support for residential, commercial, and industrial needs across Navi Mumbai.",
                     "Our team also specializes in PCB repair and sales for ACs, refrigerators, washing machines, and microwave ovens. Using tested components and advanced diagnostic tools, we ensure every repair is safe, efficient, and long-lasting.",
-                    "With skilled technicians and genuine spare parts, Apple Aircon delivers reliable, cost-effective solutions across all major appliance brands in Navi Mumbai.",
+                    "With skilled technicians, Digital Aircon delivers reliable, cost-effective repair and maintenance solutions for all major appliance brands in Navi Mumbai.",
                   ].map((text, index) => (
                     <motion.p
                       key={index}
@@ -384,7 +331,7 @@ export default function AboutUsPage() {
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.7 }}
                     src="https://i.pinimg.com/1200x/4c/cb/cc/4ccbcca00d460a6b76a2dd4d9ec0e892.jpg"
-                    alt="Apple Aircon team providing professional AC service in Navi Mumbai"
+                    alt="Digital Aircon team providing professional AC service in Navi Mumbai"
                     className="w-full h-64 object-cover rounded-2xl mb-6"
                   />
 
@@ -394,10 +341,10 @@ export default function AboutUsPage() {
 
                   <motion.ul variants={staggerContainer} className="space-y-3">
                     {[
-                      "Certified & Experienced Technicians",
+                      "Experienced & Skilled Technicians",
                       "Same-Day Service Available",
-                      "Genuine Spare Parts Warranty",
                       "Transparent Pricing - No Hidden Costs",
+                      "Reliable & Long-Lasting Repairs",
                       "Emergency AC Repair Services",
                       "Residential & Commercial Services",
                     ].map((item, index) => (
@@ -589,6 +536,8 @@ export default function AboutUsPage() {
             </div>
           </div>
         </section>
+        {/* <Floating /> */}
+        <Footer />
       </main>
     </AnimatePresence>
   );

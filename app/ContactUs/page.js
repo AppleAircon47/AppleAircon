@@ -4,6 +4,9 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MapPin, Phone, Mail, MessageSquare } from "lucide-react";
 import ServiceForm from "../../components/ServiceForm";
+// import Floating from "../../components/Floating";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 export default function ContactUsPage() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -50,6 +53,7 @@ export default function ContactUsPage() {
 
   return (
     <AnimatePresence>
+      <Navbar />
       <main className="min-h-screen bg-linear-to-br from-[#eef4ff] via-[#d9e8ff] to-[#bbd4ff] pt-26 pb-20">
         {/* HERO */}
         <motion.div
@@ -59,7 +63,7 @@ export default function ContactUsPage() {
           className="text-center mb-10"
         >
           <h1 className="text-5xl font-extrabold text-[#1e40af]">
-            Contact <span className="text-black">Apple Aircon</span>
+            Contact <span className="text-black">Digital Aircon</span>
           </h1>
 
           <p className="text-gray-700 max-w-2xl mx-auto mt-4 text-lg">
@@ -106,7 +110,7 @@ export default function ContactUsPage() {
           {/* MAP LIKE IMAGE */}
           <div className="w-full h-[350px] rounded-xl overflow-hidden shadow-lg border border-blue-300/20">
             <iframe
-              title="Apple Aircon Location"
+              title="Digital Aircon Location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.3084156334367!2d73.07206217466452!3d19.05017285278392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c17aaecbfed1%3A0xe35e63b26012dd5d!2sApple%20Aircon!5e0!3m2!1sen!2sin!4v1765545562950!5m2!1sen!2sin"
               width="100%"
               height="100%"
@@ -116,7 +120,9 @@ export default function ContactUsPage() {
             ></iframe>
           </div>
         </section>
+        {/* <Floating /> */}
       </main>
+      <Footer />
     </AnimatePresence>
   );
 }

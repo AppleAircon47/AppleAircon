@@ -21,9 +21,9 @@ export default function Home() {
                     {/* SEO-rich Description */}
                     <div className="mt-6 text-left">
                         <p className="text-base sm:text-lg text-gray-700 max-w-xl mx-auto md:mx-0 leading-relaxed">
-                            <strong>Apple Aircon</strong> in Navi Mumbai offers fast, reliable, and affordable
+                            <strong>Digital Aircon</strong> in Navi Mumbai offers fast, reliable, and affordable
                             <span className="font-semibold text-[#1e40af]"> AC repair, installation, and maintenance</span>, along with
-                            <span className="font-semibold text-[#1e40af]"> home appliance services</span> for refrigerators, washing machines, microwaves, and deep freezers.
+                            home appliance services for <span className="font-semibold text-[#1e40af]">refrigerators, washing machines, microwaves, and deep freezers.</span>
                             We also provide <span className="font-semibold text-[#1e40af]">PCB repair and sales for ACs and appliances</span>, trusted by residential and commercial clients.
                         </p>
                     </div>
@@ -91,7 +91,7 @@ focus-visible:-translate-y-1 focus-visible:bg-[#1e40af] focus-visible:text-white
                         <img
                             src="https://i.pinimg.com/1200x/4c/cb/cc/4ccbcca00d460a6b76a2dd4d9ec0e892.jpg"
                             alt="Professional AC Repair Service Technician working on air conditioner installation in Navi Mumbai"
-                            title="AC Service and Repair in Navi Mumbai | Apple Aircon"
+                            title="AC Service and Repair in Navi Mumbai | Digital Aircon"
                             className="w-full h-64 sm:h-80 lg:h-[400px] object-cover relative z-0"
                             loading="lazy"
                         />
@@ -99,6 +99,7 @@ focus-visible:-translate-y-1 focus-visible:bg-[#1e40af] focus-visible:text-white
                 </div>
 
             </div>
+
         </div>
     );
 }

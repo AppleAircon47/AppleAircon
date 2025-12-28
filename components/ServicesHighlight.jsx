@@ -11,7 +11,7 @@ const services = [
         description:
             "Reliable AC repair, installation, servicing, gas refilling, and maintenance for homes and commercial spaces in Navi Mumbai.",
         longText:
-            "Apple Aircon provides complete air conditioning solutions including new AC installation, preventive servicing, gas refilling, and emergency breakdown repairs. We work with all major AC brands such as LG, Blue Star, Daikin, and Samsung. Along with professional repair services, we also deal in new air conditioners and buy & sell certified second-hand AC units, offering affordable and energy-efficient cooling solutions for residential and commercial customers across Navi Mumbai.",
+            "Digital Aircon provides complete air conditioning solutions including new AC installation, preventive servicing, gas refilling, and emergency breakdown repairs. We work with all major AC brands such as LG, Blue Star, Daikin, and Samsung. Along with professional repair services, we also deal in new air conditioners and buy & sell certified second-hand AC units, offering affordable and energy-efficient cooling solutions for residential and commercial customers across Navi Mumbai.",
         image: "https://i.pinimg.com/1200x/03/2c/7b/032c7b2a865bb6c1f19892fbb8662179.jpg",
         portraitImage: "https://i.pinimg.com/736x/03/2c/7b/032c7b2a865bb6c1f19892fbb8662179.jpg",
     },
@@ -22,7 +22,7 @@ const services = [
         description:
             "Expert repair and maintenance for fully automatic and semi-automatic washing machines of all major brands in Navi Mumbai.",
         longText:
-            "Apple Aircon offers professional washing machine repair services including drum and motor repair, water leakage fixes, and PCB replacement. We work with top brands such as LG, Samsung, Whirlpool, and IFB to ensure your washing machine runs smoothly. Our team provides timely, reliable, and cost-effective solutions for both residential and commercial washing machines across Navi Mumbai.",
+            "Digital Aircon offers professional washing machine repair services including drum and motor repair, water leakage fixes, and PCB replacement. We work with top brands such as LG, Samsung, Whirlpool, and IFB to ensure your washing machine runs smoothly. Our team provides timely, reliable, and cost-effective solutions for both residential and commercial washing machines across Navi Mumbai.",
         // image: "https://www.lg.com/content/dam/lge/in/lifesgood/highlitght-washing/WM-NDTV-Award-Banner-1920x720-2.jpg",
         image: "/Washingmachine.png",
         // portraitImage: "https://www.lg.com/content/dam/lge/in/lifesgood/highlitght-washing/M-WM-NDTV-Award-720x960-2.jpg",
@@ -35,7 +35,7 @@ const services = [
         description:
             "Reliable microwave oven repair services for solo, grill, and convection models with genuine spare parts in Navi Mumbai.",
         longText:
-            "Apple Aircon specializes in microwave oven repair including heating issues, control panel repair, and safety checks. We service all major brands such as LG, IFB, Samsung, and Panasonic. Our certified technicians ensure fast, safe, and efficient repairs, helping you get your microwave oven back to perfect working condition. Available for residential and commercial clients across Navi Mumbai.",
+            "Digital Aircon specializes in microwave oven repair including heating issues, control panel repair, and safety checks. We service all major brands such as LG, IFB, Samsung, and Panasonic. Our certified technicians ensure fast, safe, and efficient repairs, helping you get your microwave oven back to perfect working condition. Available for residential and commercial clients across Navi Mumbai.",
         image: "https://media3.gaggenau.com/Images/1600x/MCIM03335919_Steam-landing-page-teaser-12x5.webp",
         portraitImage: "https://media3.gaggenau.com/Images/1600x/20673399_gaggenau-benefit-combi-steam-combi-microwave-ovens-400-series.webp",
     },
@@ -46,7 +46,7 @@ const services = [
         description:
             "Fast refrigerator repair including cooling issues, compressor faults, and gas charging for all brands in Navi Mumbai.",
         longText:
-            "Apple Aircon provides comprehensive refrigerator services including cooling problem fixes, compressor repair, and gas refilling. We work with major brands such as LG, Samsung, Whirlpool, and Haier to ensure efficient, long-lasting performance. Our technicians offer prompt and professional repair services for home and commercial refrigerators across Navi Mumbai, ensuring your appliances remain in top condition.",
+            "Digital Aircon provides comprehensive refrigerator services including cooling problem fixes, compressor repair, and gas refilling. We work with major brands such as LG, Samsung, Whirlpool, and Haier to ensure efficient, long-lasting performance. Our technicians offer prompt and professional repair services for home and commercial refrigerators across Navi Mumbai, ensuring your appliances remain in top condition.",
         image: "https://media3.gaggenau.com/Images/4000x/27491816_GG-global-Vario-cooling-expressive-series-refrigerators-page-full-width.webp",
         portraitImage: "https://media3.gaggenau.com/Images/1600x/23654387_GG-lux-landing-page-image-01.webp",
     },
@@ -98,10 +98,10 @@ export default function ServicesHighlight() {
                         <button
                             key={service.id}
                             onClick={() => setActiveService(service)}
-                            className={`text-base sm:text-lg font-medium pb-1 whitespace-nowrap transition shrink-0
+                            className={`text-base sm:text-lg font-bold pb-1 whitespace-nowrap transition shrink-0
                                 ${activeService.id === service.id
                                     ? "border-b-2 border-[#1e40af] text-[#1e40af]"
-                                    : "text-gray-600 hover:text-black"
+                                    : "text-black hover:text-gray-600"
                                 }`}
                         >
                             {service.tabTitle}

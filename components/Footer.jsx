@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { Phone, MapPin, Mail, Calendar, Star } from "lucide-react";
+import Floating from "./Floating"
 
 export default function Footer() {
     return (
@@ -12,7 +13,7 @@ export default function Footer() {
 
                 {/* Brand Info */}
                 <div>
-                    <h2 className="text-2xl font-bold mb-4">Apple Aircon</h2>
+                    <h2 className="text-2xl font-bold mb-4">Digital Aircon</h2>
                     <p className="text-gray-300 leading-relaxed">
                         Expert AC & appliance repair services in Navi Mumbai with reliable
                         technicians, transparent pricing, and same-day support.
@@ -99,11 +100,11 @@ export default function Footer() {
                         <div className="space-y-3 mb-6">
                             <div className="flex justify-between items-center">
                                 <span className="text-gray-300 text-sm">Monday - Saturday</span>
-                                <span className="text-white font-medium text-sm">8:00 AM - 10:00 PM</span>
+                                <span className="text-white font-medium text-sm">9:00 AM - 11:00 PM</span>
                             </div>
                             <div className="flex justify-between items-center">
                                 <span className="text-gray-300 text-sm">Sunday</span>
-                                <span className="text-white font-medium text-sm">9:00 AM - 8:00 PM</span>
+                                <span className="text-white font-medium text-sm">10:00 AM - 11:00 PM</span>
                             </div>
                         </div>
 
@@ -133,9 +134,9 @@ export default function Footer() {
 
             {/* Bottom Section */}
             <div className="border-t border-blue-300/20 mt-10 pt-4 text-center text-gray-400 text-sm">
-                © {new Date().getFullYear()} Apple Aircon — All Rights Reserved.
+                © {new Date().getFullYear()} Digital Aircon — All Rights Reserved.
             </div>
-
+            <Floating />
         </footer>
     );
 }

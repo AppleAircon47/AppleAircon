@@ -37,7 +37,7 @@ export default function FindUsPage() {
                             Find Us
                         </h1>
                         <p className="text-gray-700 max-w-2xl mx-auto mt-4 text-lg sm:text-xl">
-                            Visit Apple Aircon in Navi Mumbai for expert AC and appliance services. We provide repair, installation, and sales for all types of air conditioners, refrigerators, washing machines, microwave ovens, and deep freezers.
+                            Visit Digital Aircon in Navi Mumbai for expert AC and appliance services. We provide repair, installation, and sales for all types of air conditioners, refrigerators, washing machines, microwave ovens, and deep freezers.
                         </p>
                     </motion.div>
 
@@ -49,7 +49,7 @@ export default function FindUsPage() {
                         className="w-full h-[500px] rounded-xl overflow-hidden shadow-lg border border-blue-300/20"
                     >
                         <iframe
-                            title="Apple Aircon Location"
+                            title="Digital Aircon Location"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.3084156334367!2d73.07206217466452!3d19.05017285278392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c17aaecbfed1%3A0xe35e63b26012dd5d!2sApple%20Aircon!5e0!3m2!1sen!2sin!4v1765545562950!5m2!1sen!2sin"
                             width="100%"
                             height="100%"

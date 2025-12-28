@@ -7,7 +7,6 @@ export default function Page() {
       fallback={
         <div className="min-h-screen w-full flex items-center justify-center bg-linear-to-br from-[#eef4ff] via-[#d9e8ff] to-[#bbd4ff] px-4">
           <div className="w-full max-w-3xl bg-white/80 backdrop-blur-md rounded-3xl shadow-2xl border border-[#d0ddf5] p-8 sm:p-12 animate-pulse">
-
             {/* Title Skeleton */}
             <div className="h-8 sm:h-10 w-3/4 bg-[#1e40af]/20 rounded-lg mb-6"></div>
 
@@ -18,14 +17,13 @@ export default function Page() {
 
             {/* SEO-Friendly Loading Text */}
             <p className="text-center text-[#1e40af] font-semibold text-base sm:text-lg">
-              Preparing Apple Aircon services…
+              Preparing Digital Aircon services…
             </p>
 
             {/* CTA Skeleton */}
             <div className="mt-8 flex justify-center">
               <div className="h-12 w-48 rounded-full bg-[#1e40af]/30"></div>
             </div>
-
           </div>
         </div>
       }

@@ -67,7 +67,7 @@ export default function Navbar() {
                     {/* Logo */}
                     <Link href="/" className="flex flex-col">
                         <h1 className="text-xl font-extrabold text-[#0f172a] tracking-tight">
-                            Apple Aircon
+                            Digital Aircon
                         </h1>
                         <p className="text-xs text-gray-600 font-medium tracking-wide">
                             Air Conditioning & Appliance Services
@@ -157,7 +157,7 @@ export default function Navbar() {
                         initial={{ opacity: 0, y: -15 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -15 }}
-                        className="lg:hidden bg-white/95 backdrop-blur-xl shadow-xl border-t rounded-b-2xl"
+                        className="lg:hidden bg-white/95 backdrop-blur-xl shadow-xl border-t rounded-b-2xl mt-4"
                     >
                         <div className="px-4 py-6 space-y-2">
                             {navItems.map((item) => (
