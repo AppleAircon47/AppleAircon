@@ -1,7 +1,8 @@
 export const metadata = {
-  title: "AC Repair & Installation Services in Navi Mumbai",
+  title:
+    "Digital Aircon – Expert AC Repair, Servicing & Installation in Navi Mumbai",
   description:
-    "Looking for reliable AC repair, installation & servicing in Navi Mumbai? Digital Aircon offers fast, affordable & expert AC solutions.",
+    "Digital Aircon provides expert repair, servicing, installation, and buying & selling solutions for ACs, refrigerators, washing machines, microwaves, and deep freezers across Navi Mumbai.",
 };
 
 // "use client";
