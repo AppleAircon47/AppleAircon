@@ -53,10 +53,10 @@ export const metadata = {
 
   authors: [{ name: "Digital Aircon" }],
 
-  alternates: {
-    canonical: "https://www.digitalaircon.com",
-    // canonical: "https://musk-appliance-five.vercel.app/",
-  },
+  // alternates: {
+  //   canonical: "https://www.digitalaircon.com",
+  //   // canonical: "https://musk-appliance-five.vercel.app/",
+  // },
 
   openGraph: {
     title: "Digital Aircon – Trusted AC & Appliance Services",
@@ -83,7 +83,6 @@ export const metadata = {
 
   icons: {
     icon: "/favicon.ico",
-    // apple: "/apple-touch-icon.png",
   },
 };
 
