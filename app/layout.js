@@ -18,7 +18,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://musk-appliance-five.vercel.app"),
+  metadataBase: new URL("https://digitalaircon.com"),
 
   title: {
     default:
@@ -54,16 +54,16 @@ export const metadata = {
   authors: [{ name: "Digital Aircon" }],
 
   alternates: {
-    canonical: "https://musk-appliance.vercel.app/",
-    canonical: "https://musk-appliance-five.vercel.app/",
+    canonical: "https://www.digitalaircon.com",
+    // canonical: "https://musk-appliance-five.vercel.app/",
   },
 
   openGraph: {
     title: "Digital Aircon – Trusted AC & Appliance Services",
     description:
       "Professional repair, servicing, installation, and buying & selling of ACs, refrigerators, washing machines, microwaves, and deep freezers in Navi Mumbai.",
-    url: "https://musk-appliance.vercel.app/",
-    url: "https://musk-appliance-five.vercel.app//",
+    url: "https://www.digitalaircon.com",
+    // url: "https://musk-appliance-five.vercel.app//",
     siteName: "Digital Aircon",
     locale: "en_IN",
     type: "website",

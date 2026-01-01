@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = "https://musk-appliance.vercel.app";
+  const baseUrl = "https://www.digitalaircon.com";
   const lastModified = new Date();
 
   return [
