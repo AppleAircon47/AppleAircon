@@ -1,5 +1,7 @@
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
+
 // import Navbar from "../components/Navbar";
 // import Footer from "../components/Footer";
 
@@ -94,6 +96,22 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* Google Analytics */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-NNF4QZ4KG3"
+        />
+        <Script id="ga-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-NNF4QZ4KG3');
+          `}
+        </Script>
+      </head>
+
       <body className={`${inter.variable} ${poppins.variable} antialiased`}>
         {/* <Navbar /> */}
         {children}
