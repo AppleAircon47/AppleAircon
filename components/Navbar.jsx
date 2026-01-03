@@ -33,8 +33,8 @@ export default function Navbar() {
                 { name: "Microwave Oven", href: "/services?service=microwave" },
             ],
         },
-        { name: "About", href: "/AboutUs", type: "navigate" },
-        { name: "Contact", href: "/ContactUs", type: "navigate" },
+        { name: "About Us", href: "/about", type: "navigate" },
+        { name: "Contact Us", href: "/contact", type: "navigate" },
     ];
 
     const isActive = (href) => {

@@ -42,13 +42,6 @@ export default function Home() {
                             Call Now
                         </a>
 
-                        {/* <button
-                            className="px-7 py-3.5 rounded-xl bg-white border-2 border-[#1e40af] text-[#1e40af] font-semibold hover:bg-[#1e40af] hover:text-white shadow-lg transition transform hover:-translate-y-1 duration-300 cursor-pointer active:bg-[#1e40af] active:text-white
-focus-visible:-translate-y-1 focus-visible:bg-[#1e40af] focus-visible:text-white"
-                            aria-label="Book AC Service Appointment"
-                        >
-                            Book Free Inspection
-                        </button> */}
                         <button
                             className="px-7 py-3.5 rounded-xl bg-white border-2 border-[#1e40af] text-[#1e40af] font-semibold hover:bg-[#1e40af] hover:text-white shadow-lg transition transform hover:-translate-y-1 duration-300 cursor-pointer active:bg-[#1e40af] active:text-white focus-visible:-translate-y-1 focus-visible:bg-[#1e40af] focus-visible:text-white"
                             aria-label="Book AC Service Appointment"
@@ -61,18 +54,6 @@ focus-visible:-translate-y-1 focus-visible:bg-[#1e40af] focus-visible:text-white
                         >
                             Book Free Inspection
                         </button>
-
-
-                        {/* <a
-                            href="#service-form"
-                            className="inline-block px-7 py-3.5 rounded-xl bg-white border-2 border-[#1e40af] 
-               text-[#1e40af] font-semibold hover:bg-[#1e40af] hover:text-white 
-               shadow-lg transition transform hover:-translate-y-1 duration-300 
-               cursor-pointer"
-                            aria-label="Book AC Service Appointment"
-                        >
-                            Book Free Inspection
-                        </a> */}
                     </div>
                 </div>
 
@@ -89,7 +70,9 @@ focus-visible:-translate-y-1 focus-visible:bg-[#1e40af] focus-visible:text-white
 
                         {/* Optimized Image */}
                         <img
-                            src="https://i.pinimg.com/1200x/4c/cb/cc/4ccbcca00d460a6b76a2dd4d9ec0e892.jpg"
+                            // src="https://i.pinimg.com/1200x/4c/cb/cc/4ccbcca00d460a6b76a2dd4d9ec0e892.jpg" Keep this line for reference
+                            src="hero1.png" //hero image optimized and stored locally
+                            // src="hero2.png" //hero image optimized and stored locally
                             alt="Professional AC Repair Service Technician working on air conditioner installation in Navi Mumbai"
                             title="AC Service and Repair in Navi Mumbai | Digital Aircon"
                             className="w-full h-64 sm:h-80 lg:h-[400px] object-cover relative z-0"

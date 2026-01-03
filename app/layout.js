@@ -2,9 +2,6 @@ import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 
-// import Navbar from "../components/Navbar";
-// import Footer from "../components/Footer";
-
 const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "500"],
@@ -55,17 +52,11 @@ export const metadata = {
 
   authors: [{ name: "Digital Aircon" }],
 
-  // alternates: {
-  //   canonical: "https://www.digitalaircon.com",
-  //   // canonical: "https://musk-appliance-five.vercel.app/",
-  // },
-
   openGraph: {
     title: "Digital Aircon – Trusted AC & Appliance Services",
     description:
       "Professional repair, servicing, installation, and buying & selling of ACs, refrigerators, washing machines, microwaves, and deep freezers in Navi Mumbai.",
     url: "https://www.digitalaircon.com",
-    // url: "https://musk-appliance-five.vercel.app//",
     siteName: "Digital Aircon",
     locale: "en_IN",
     type: "website",
@@ -113,9 +104,7 @@ export default function RootLayout({ children }) {
       </head>
 
       <body className={`${inter.variable} ${poppins.variable} antialiased`}>
-        {/* <Navbar /> */}
         {children}
-        {/* <Footer /> */}
       </body>
     </html>
   );

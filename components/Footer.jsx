@@ -40,9 +40,9 @@ export default function Footer() {
                     <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
                     <ul className="space-y-3 text-gray-300">
                         <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
-                        <li><Link href="/AboutUs" className="hover:text-white transition-colors">About Us</Link></li>
+                        <li><Link href="/about" className="hover:text-white transition-colors">About Us</Link></li>
                         <li><Link href="/#servicesHighlight" className="hover:text-white transition-colors">Services</Link></li>
-                        <li><Link href="/ContactUs" className="hover:text-white transition-colors">Contact Us</Link></li>
+                        <li><Link href="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
                     </ul>
                 </div>
 
@@ -54,9 +54,9 @@ export default function Footer() {
                             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
                             <ul className="space-y-3 text-gray-300 text-sm">
                                 <li><Link href="/" className="hover:text-white">Home</Link></li>
-                                <li><Link href="/AboutUs" className="hover:text-white">About Us</Link></li>
+                                <li><Link href="/about" className="hover:text-white">About Us</Link></li>
                                 <li><Link href="/#servicesHighlight" className="hover:text-white">Services</Link></li>
-                                <li><Link href="/ContactUs" className="hover:text-white">Contact Us</Link></li>
+                                <li><Link href="/contact" className="hover:text-white">Contact Us</Link></li>
                             </ul>
                         </div>
 
@@ -148,7 +148,7 @@ export default function Footer() {
                         <button
                             onClick={async () => {
                                 window.open("https://mustafakhan-portfolio.netlify.app", "_blank");
-                                
+
                                 // Use Promise to create microtask delay
                                 await Promise.resolve();
                                 window.open("https://www.linkedin.com/in/mustafakhan-dev", "_blank");
